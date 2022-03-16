@@ -1,12 +1,15 @@
-#include "main.h"
+nclude "main.h"
 
 /**
- * main - check the code.
+ * print_alphabet_x10 - print alphabet 10 times
  *
- * Return: Always 0.
+ * Return: void
  */
-void print_alphabet_x10(void);
+
+void print_alphabet_x10(void)
+
 {
+	
 	int count = 0;
 	char ch = 'a';
 	
@@ -14,14 +17,13 @@ void print_alphabet_x10(void);
 	{
 		ch = 'a';
 		while (ch <= 'z')
-		
 		{
 			_putchar(ch);
 			ch++
 		}
-		
-		_putchar('\n');
-		count++;
-	}
+		_putchar('\n')
+			
+			count++;
 
-}
+	}
+}													
