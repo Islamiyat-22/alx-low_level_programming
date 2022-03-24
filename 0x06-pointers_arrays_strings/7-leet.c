@@ -16,13 +16,12 @@ char *leet(char *n)
 	{
 		for (x = 0; x <= 9; x++)
 		{
-			if (n[i] == find [x])
+			if (n[i] == find[x])
 			{
 				n[i] = replacer[x / 2];
 				x = 9;
 			}
 		}
 	}
-	
 	return (n);
 }
