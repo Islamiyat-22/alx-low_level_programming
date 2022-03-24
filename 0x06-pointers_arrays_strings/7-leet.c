@@ -2,29 +2,27 @@
 
 /**
  * leet - encodes a string into 1337
- * @s: input string
+ * @n: input string
  * Return: the pointer to dest.
  */
 
-char *leet(char *s)
+char *leet(char *n)
 {
-	int count = o, i;
-	int low_letters[] = {97, 101, 111, 116, 108};
-	int upp_letters[] = {65, 69, 79, 84, 76};
-	int replacer[] = {52, 51, 48, 55, 49};
+	int i, x;
+	int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	int replacer[] = {'4', '3', '0', '7', '1'};
 	
-	while (*(s + count) != '\0')
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		for (i = 0; i < 5; i++)
+		for (x = 0; x <= 9; x++)
 		{
-			if (*(s + count == low_letters[i] || *(s + count) == upp_letters[i])
-					{
-						*(s + count) = replacer[i];
-						break;
-					}
+			if (n[i] == find [x])
+			{
+				(n[i] = replacer[x / 2];
+				 x = 9;
+				 }
 		}
-		count++;
 	}
-
-	return (s);
+	
+	return (n);
 }
