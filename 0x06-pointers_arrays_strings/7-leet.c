@@ -18,9 +18,9 @@ char *leet(char *n)
 		{
 			if (n[i] == find [x])
 			{
-				(n[i] = replacer[x / 2];
-				 x = 9;
-				 }
+				n[i] = replacer[x / 2];
+				x = 9;
+			}
 		}
 	}
 	
